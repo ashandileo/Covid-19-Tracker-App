@@ -1,0 +1,5 @@
+.container {
+    display: flex;
+    justfy-content: center;
+    width: 85%;
+}
