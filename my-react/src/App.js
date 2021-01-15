@@ -29,11 +29,14 @@ class App extends Component {
         const { data, country } = this.state;
 
         return (
-            <div className={styles.container}>
+            <div className={styles.container} style={{ paddingBottom: "50px" }}>
                 <img className={styles.image} src={coronaImage} alt="Covid-19" />
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Chart data={data} country={country} />
+                <footer style={{ marginTop: "20px" }}>
+                    @Ashandi Leonadi
+                </footer>
             </div>
         )
     }
